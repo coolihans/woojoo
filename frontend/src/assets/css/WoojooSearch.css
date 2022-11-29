@@ -1,0 +1,63 @@
+.woojoo-searchbar {
+  background-color: var(--main-bg-color);
+  height: 150px;
+}
+
+.category-title {
+  margin: 10px;
+}
+
+.category-list {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.category-list .category-box .image {
+  width: 50px;
+}
+
+.category-list .category-box p{
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.woojo-list {
+  display: flex;
+  flex-wrap : wrap;
+  justify-content: space-between;
+  background-color: var(--main-bg-color);
+  margin: 10px;
+  padding: 20px 0;
+}
+
+.woojo-list .woojoo-list-box {
+  /* border: 1px solid #eee; */
+  /* border-radius: 25px; */
+  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, var(--shadow-percentage-03));
+  width: 170px;
+  height: 350px;
+  padding: 5px;
+  margin: 10px 0px 10px 0px;
+  text-align: left;
+}
+
+.woojo-list .woojoo-list-box .image {
+  position: relative;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.woojoo-list-box .content p{
+  font-size: 0.1rem;
+}
+
+.image .like {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+
+.like .heart {
+  color: tomato;
+}

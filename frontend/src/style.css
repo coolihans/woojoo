@@ -1,0 +1,100 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --main-color: #FFD634;
+  --main-rbga-color: 255, 214, 52;
+  /* --main-bg-color: #FFFAE8; */
+  --main-bg-color: #f9f9f9;
+  --highlight-bg-color: #FFD634;
+  --main-header-color: #FFD634;
+  /* --highlight-dark-bg-color: #091022; */
+  --menu-color: #fafafa;
+  --text-color: 0, 0, 0;
+  --text-sub-color: #777;
+  --text-highlight-color: #FF9314;
+  --menu-icon-color: #fae3a4;
+  --card-bg-color: #fff;
+  --card-transparent-color: transparent;
+  --border-color: #E8E8E8;
+  --shadow-percentage-04: 0.04;
+  --shadow-percentage-03: 0.03;
+
+  --checked-brightness: 0.97;
+
+  /* --dark-main-color: #ffd524;
+  --dark-main-bg-color: #161b27;
+  --dark-menu-color: #23283c; */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  /* min-width: 320px;
+  min-height: 100vh; */
+}
+
+#app {
+  z-index: 0 !important;
+  margin: 0 auto;
+  max-height: 100vh;
+  text-align: center;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+} */
+
+/* box-shadow */
+/* light mode */
+.bs-upper-02 {
+  box-shadow: 0px -4px 6px 6px rgba(0, 0, 0, 0.02) !important;
+}
+
+.bs-upper-05 {
+  box-shadow: 0px -4px 6px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+.bs-lower-05 {
+  box-shadow: 0px -4px 6px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+.bs-card-03 {
+  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.03) !important;
+}
+
+.bs-none {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.bs-dark-card-03 {
+  box-shadow: 2px 2px 9px 2px rgba(255, 0, 0, 0.03) !important;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.cl-ellipsis {
+  display: block;
+  margin: 0 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.el-pagination {
+ justify-content: center; 
+}

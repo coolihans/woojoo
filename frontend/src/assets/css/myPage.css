@@ -1,0 +1,724 @@
+/* main tab */
+.profile-container {
+  padding-bottom: 70px;
+}
+
+.mypage-header {
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  top: 0;
+  height: 120px;
+  background-color: var(--highlight-bg-color);
+  z-index: 50;
+}
+
+.header-nick {
+  width: 250px;
+  height: 60px;
+  position: absolute;
+  top: 240px;
+  left: calc(50% - 125px);
+  font-size: 1.5rem;
+  /* font-size: 1.2rem; */
+  font-weight: 800;
+  line-height: 60px;
+  text-align: center;
+  color: rgb(var(--text-color));
+}
+
+.mypage-profile {
+  width: 100%;
+  max-width: 500px;
+  height: 510px;
+  position: fixed;
+  top: 0;
+  background-color: var(--highlight-bg-color);
+  color: rgb(var(--text-color));
+  opacity: 1;
+}
+
+.mypage-profile .profile-pic {
+  position: absolute;
+  top: 135px;
+  left: 38%;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  transform-origin: 50% 0;
+  box-shadow: 0px 4px 6px 6px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.mypage-profile .level {
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  left: calc(50% - 125px);
+  top: 300px;
+  text-align: center;
+}
+
+.mypage-profile .email {
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  top: 320px;
+  left: calc(50% - 125px);
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.mypage-profile .profilebox {
+  width: 250px;
+  height: 125px;
+  position: absolute;
+  top: 115px;
+  left: calc(50% - 125px);
+}
+
+.mypage-profile .edit-profile {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 2px;
+  right: calc(50% - 50px);
+  background-color: var(--main-bg-color);
+  opacity: 0.8;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.1)
+
+}
+
+.mypage-profile .logout {
+  position: absolute;
+  top: 320px;
+  left: calc(50% + 90px);
+  opacity: 0.5;
+}
+
+
+
+.mypage-profile .bg-box {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 115px;
+  left: calc(50% - 125px);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, var(--shadow-percentage-03));
+}
+
+.mypage-container {
+  margin-top: 510px;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.mypage-tabs {
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+  position: absolute;
+  top: -60px;
+  z-index: 100;
+}
+
+.tabs-menu-container {
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+  border-radius: 40px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: var(--main-bg-color);
+  box-shadow: 0px -12px 6px -6px rgba(0, 0, 0, 0.05);
+}
+
+.tabs-menu-container .tab {
+  width: 33%;
+  height: 100%;
+  float: left;
+  line-height: 60px;
+  font-size: 1.1rem;
+}
+
+.mypage-tabs .tabs-now {
+  width: 33%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+.mypage-tabs .tabs-now .under-bar {
+  width: 70px;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 35px);
+  border-radius: 2px;
+}
+
+.tabs-container {
+  width: 100%;
+  max-width: 500px;
+  height: calc(100vh);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.tabs-container .tab-control {
+  margin: 0;
+  width: 300vw;
+  max-width: 1500px;
+  transition: all 0.5s ease;
+  display: flex;
+}
+
+.tabs-container .scroll-false {
+  width: 300vw;
+  max-width: 1500px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.tabs-container .tab-section {
+  width: 100vw;
+  max-width: 500px;
+  background-color: var(--main-bg-color);
+}
+
+.tab-section .el-scrollbar {
+  height: calc(100vh - 190px);
+}
+
+.tab-section .mypage-inner {
+  padding: 50px 0;
+}
+
+.mypage-type {
+  top: 0;
+  left: 0;
+}
+
+.mypage-likes {
+  top: 0;
+  left: 100vw;
+}
+
+.mypage-reviews {
+  top: 0;
+  left: 200vw;
+}
+
+.tabs-container img {
+  width: 100%;
+}
+
+
+/* myPage: preferance */
+.preferance-container .type-main .prefer-type {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.type-main .prefer-type .nick {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.type-main .person-type {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-highlight-color);
+}
+
+.preferance-container .preferance {
+  margin-bottom: 50px;
+}
+
+.preferance-container .preferance .abst {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-highlight-color);
+}
+
+.preferance-container .preferance .flavor {
+  margin-bottom: 5px;
+}
+
+.preferance .flavor .highlight {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+.again-container .again-content {
+  padding-bottom: 30px;
+  width: 100%;
+  max-width: 500px;
+  height: 130px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.again-container .again-content .survey-btn {
+  margin-top: 20px;
+  padding-bottom: 100px;
+  height: 50px;
+  font-weight: 600;
+}
+
+.again-container .again-content .survey-btn .btn-box {
+  margin: 0 auto;
+  width: 220px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: var(--main-color);
+  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, var(--shadow-percentage-03));
+}
+
+
+
+
+/* myPage: likes */
+.likes-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.likes-container .like-wooju {
+  width: 40vw;
+  max-width: 200px;
+  height: 60vw;
+  max-height: 300px;
+  border-radius: 20px;
+  box-shadow: 1px 4px 4px 4px rgba(0, 0, 0, 0.03);
+  background-color: var(--card-bg-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.likes-container .like-wooju:nth-child(2n) {
+  margin: 0 6% 20px 3%;
+}
+
+
+.likes-container .like-wooju:nth-child(2n + 1) {
+  margin: 0 3% 20px 6%;
+}
+
+.like-wooju .wooju-img {
+  width: 40vw;
+  max-width: 200px;
+  height: 40vw;
+  max-height: 200px;
+  margin: 0;
+}
+
+.like-wooju .wooju-img img {
+  margin: 0 auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.like-wooju .introduction {
+  margin: 8px 20px;
+  width: 40vw;
+  max-width: 200px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.like-wooju .introduction > div {
+  height: 33px;
+  line-height: 33px;
+}
+
+.like-wooju .introduction .product-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.like-wooju .introduction .half {
+  margin-right: 5px;
+}
+
+.like-wooju .introduction .heart {
+  margin: 0 3px 0 5px;
+}
+
+.like-wooju .introduction .heart .heart-icon {
+  color: tomato;
+}
+
+
+/* myPage: reviews */
+.mypage-review-container .list-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@media (min-width: 500px) {
+  .mypage-review-card {
+    margin: 0 15px 50px 15px;
+    width: 220px;
+    height: 350px;
+  }
+  
+  .mypage-review-card .review-content {
+    margin: 10px 0 0 10px;
+  }  
+  
+  .mypage-review-card .review-img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mypage-review-card {
+    margin: 0 3vw 10vw 3vw;
+    width: 44vw;
+    height: 70vw;
+  }
+  
+  .mypage-review-card .review-content {
+    margin: 2vw 0 0 10px;
+  }
+
+  .mypage-review-card .review-img {
+    width: 44vw;
+    height: 44vw;
+  }
+}
+
+.mypage-review-card {
+  border-radius: 20px;
+  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, var(--shadow-percentage-04));
+  overflow: hidden;
+}
+
+.mypage-review-card .review-img {
+  display: inline-block;
+}
+
+
+.mypage-review-card .review-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mypage-review-card .review-content .review-wooju {
+  font-weight: 600;
+}
+
+.mypage-review-card .review-content .review-date,
+.mypage-review-card .review-content .review-rate {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 0.9rem;
+}
+
+.mypage-review-card .review-content .review-rate .star {
+  color: #FFD634;
+}
+
+
+/* review card modal */
+
+.teleport-container {
+  width: 90vw;
+  max-width: 450px;
+  height: calc(100vh - 60px);
+  position: absolute;
+  top: -60px;
+  left: 5%;
+  z-index: 100000;
+  transition: all 0.5s ease;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  background-color: var(--card-bg-color);
+}
+
+.teleport-background {
+  width: 100vw;
+  max-width: 500px;
+  height: calc(100vh - 70px);
+  background-color: rgba(var(--text-color), 0.3);
+  position: absolute;
+  top: -120px;
+  left: 0;
+  z-index: 100000;
+  transition: all 0.5s ease;
+}
+
+.teleport-container .modal-header {
+  width: 100%;
+  max-width: 450px;
+  height: 60px;
+  display: flex;
+}
+
+.teleport-container .modal-header .date{
+  padding-left: 20px;
+  width: 60%;
+  max-width: 400px;
+  height: 60px;
+  line-height: 60px;
+  text-align: left;
+}
+
+.teleport-container .modal-header .edit-btn {
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  max-width: 100px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.teleport-container .modal-header .delete-btn {
+  margin: 0 4% 0 2%;
+  padding: 0;
+  width: 15%;
+  max-width: 100px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.teleport-container .modal-header .edit-btn .btn-box,
+.teleport-container .modal-header .delete-btn .btn-box {
+  margin-top: 15px;
+  width: 50px;
+  height: 30px;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  line-height: 30px;
+  color: #999;
+  background-color: var(--main-bg-color);
+}
+
+.teleport-container .image-carousel {
+  width: 90vw;
+  max-width: 450px;
+  overflow: hidden;
+}
+
+.teleport-container .image-carousel .modal-img-container {
+  width: 270vw;
+  max-width: 1350px;
+  display: flex;
+}
+
+.teleport-container .modal-img-container .img {
+  margin: 0;
+  padding: 0;
+  width: 90vw;
+  height: 90vw;
+  max-width: 450px;
+  max-height: 450px;
+}
+
+.teleport-container .modal-img-container .img img {
+  width: 90vw;
+  height: 90vw;
+  max-width: 450px;
+  max-height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.el-carousel__arrow {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.teleport-container .review-stat {
+  margin: 20px 10px 20px 10px;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.teleport-container .review-stat .name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.teleport-container .review-stat div {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+
+.teleport-container .review-stat .star {
+  color: #FFD634;
+}
+
+.teleport-container .review-stat .rate-num {
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+.teleport-container .review-content {
+  margin: 0 10px;
+  text-align: left;
+}
+
+.teleport-container .close-btn {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  bottom: 150px;
+  right: 20px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  background-color: var(--highlight-bg-color);
+}
+
+
+/* profile edit page */
+.profile-edit-container {
+  margin-top: 60px;
+  width: 100vw;
+  max-width: 500px;
+  height: calc(100vh - 130px);
+  position: relative;
+}
+
+.profile-edit-container .title {
+  padding: 40px 0 50px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.profile-edit-container .avatar {
+  position: relative;
+}
+
+.profile-edit-container .avatar .pic {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 100%;
+  position: relative;
+}
+
+.profile-edit-container .avatar .pic img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}  
+
+.profile-edit-container .avatar .pic-edit {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  height: 40px;
+}
+
+.profile-edit-container .avatar .pic-edit .pic-edit-btn {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  left: calc(50% + 35px);
+  border-radius: 100%;
+  background-color: var(--card-bg-color);
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.07)
+
+}
+
+.profile-edit-container .avatar .pic-edit .edit-btn {
+  margin-top: 20px;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 10px;
+  border: 1px solid var(--main-color);
+  font-size: 0.9rem;
+}
+
+.profile-edit-container .avatar .pic-edit #pic-upload-input {
+  display: none;
+}
+
+.profile-edit-container .profile-info {
+  margin: 0 auto;
+  width: 250px;
+  height: 100px;
+}
+
+.profile-edit-container .profile-info .nick {
+  margin-top: 50px;
+  width: 250px;
+  height: 35px;
+  line-height: 35px;
+  text-align: left;
+}
+
+.preferance-container .profile-info .edit-nickname {
+  width: 250px;
+  height: 30px;
+}
+
+.profile-edit-container .profile-info .email {
+  padding-left: 5px;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.profile-edit-container .profile-info .email .envelope {
+  color: var(--text-sub-color);
+}
+
+.profile-edit-container .buttons {
+  margin-top: 50px;
+  width: 100vw;
+  max-width: 500px;
+  height: 100px;
+  position: relative;
+}
+
+.profile-edit-container .submit {
+  margin-top: 40px;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  background-color: var(--highlight-bg-color);
+}

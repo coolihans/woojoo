@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "esbuild-windows-64": "^0.15.9"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.9"
+  }
+}

@@ -1,0 +1,513 @@
+
+/* woojoo detail header */
+.detail-header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.woojoo-pic {
+  height: 500px;
+}
+
+.woojoo-pic .image {
+  width: 100%;
+}
+
+.detail-header {
+  width: 100%;
+  max-width: 500px;
+  height: 510px;
+  position: fixed;
+  top: 0;
+  background-color: var(--highlight-bg-color);
+  color: rgb(var(--text-color));
+  opacity: 1;
+}
+
+.mypage-profile .profile-pic {
+  position: absolute;
+  top: 135px;
+  left: 38%;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  transform-origin: 50% 0;
+  box-shadow: 0px 4px 6px 6px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.detail-header .bg-box {
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  overflow: hidden;
+  top: 75px;
+  left: calc(50% - 150px);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, var(--shadow-percentage-03));
+}
+
+.detail-header .bg-box img {
+  max-width: 100%;
+  display: block; 
+  margin: 0px auto;
+  /* height: auto; */
+}
+
+.like-add {
+  position: absolute;
+  bottom: 90px;
+  right: 60px;
+  font-size: 1rem;
+}
+
+.like-add .icon {
+  margin: 10px;
+  color: tomato;
+}
+
+/* woojoo-detail-content tab */
+.detail-container {
+  margin: 30px 0 60px 0;
+}
+
+.detail-content {
+  text-align: left;
+}
+
+.detail-content .woojoo-text {
+  padding: 0 10px;
+  text-align: center;
+}
+
+
+.detail-content .wooju {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0px 20px 10px;
+}
+
+.detail-content .wooju .wooju-name {
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #a4a4a4;
+}
+
+.detail-content .degree .wooju-alcohol {
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #a4a4a4;
+}
+
+.detail-content .degree {
+  font-size: 1.3rem;
+  margin: 20px 0px 20px 10px;
+}
+
+.detail-content .rate {
+  margin: 20px 0px 20px 10px;
+}
+
+.detail-content .rate .wooju-star {
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #a4a4a4;
+}
+
+.detail-content .rate .star {
+  color: #ffd524;
+  margin-right: 5px;
+}
+
+.detail-content .detail-text {
+  margin: 20px 0px 20px 10px;
+  font-size: 1rem;    
+}
+
+/* main tab */
+.detail-profile-container {
+    padding-bottom: 70px;
+  }
+  
+  .mypage-header {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    top: 0;
+    height: 120px;
+    background-color: var(--highlight-bg-color);
+    z-index: 50;
+  }
+  
+  .header-nick {
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    top: 240px;
+    left: calc(50% - 125px);
+    font-size: 1.5rem;
+    /* font-size: 1.2rem; */
+    font-weight: 800;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(var(--text-color));
+  }
+  
+  .mypage-profile {
+    width: 100%;
+    max-width: 500px;
+    height: 510px;
+    position: fixed;
+    top: 0;
+    background-color: var(--highlight-bg-color);
+    color: rgb(var(--text-color));
+    opacity: 1;
+  }
+  
+  .mypage-profile .profile-pic {
+    position: absolute;
+    top: 135px;
+    left: 38%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    transform-origin: 50% 0;
+    box-shadow: 0px 4px 6px 6px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .mypage-profile .level {
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    left: calc(50% - 125px);
+    top: 300px;
+    text-align: center;
+  }
+  
+  .mypage-profile .email {
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 320px;
+    left: calc(50% - 125px);
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .mypage-profile .bg-box {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 115px;
+    left: calc(50% - 125px);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, var(--shadow-percentage-03));
+  }
+  
+  .mypage-container {
+    margin-top: 510px;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .mypage-tabs {
+    width: 100%;
+    max-width: 500px;
+    height: 60px;
+    position: absolute;
+    top: -60px;
+    z-index: 100;
+  }
+  
+  .tabs-menu-container {
+    width: 100%;
+    max-width: 500px;
+    height: 60px;
+    border-radius: 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: var(--main-bg-color);
+    box-shadow: 0px -12px 6px -6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .tabs-menu-container .tab {
+    width: 33%;
+    height: 100%;
+    float: left;
+    line-height: 60px;
+    font-size: 1.1rem;
+  }
+  
+  .mypage-tabs .tabs-now {
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .mypage-tabs .tabs-now .under-bar {
+    width: 70px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 35px);
+    border-radius: 2px;
+  }
+  
+  .tabs-container {
+    width: 100%;
+    max-width: 500px;
+    height: calc(100vh - 120px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  .tabs-container .tab-control {
+    margin: 0;
+    width: 300vw;
+    max-width: 1500px;
+    transition: all 0.5s ease;
+    display: flex;
+  }
+  
+  .tabs-container .scroll-false {
+    width: 300vw;
+    max-width: 1500px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  
+  .tabs-container .tab-section {
+    width: 100vw;
+    max-width: 500px;
+    background-color: var(--main-bg-color);
+  }
+  
+  .tab-section .el-scrollbar {
+    height: calc(100vh - 190px);
+  }
+  
+  .detail-content {
+    top: 0;
+    left: 0;
+  }
+  
+  .mypage-likes {
+    top: 0;
+    left: 100vw;
+  }
+  
+  .mypage-reviews {
+    top: 0;
+    left: 200vw;
+  }
+  
+  .tabs-container img {
+    width: 100%;
+  }
+  
+  
+  /* myPage: preferance */
+  .preferance-container .type-main .prefer-type {
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .type-main .prefer-type .nick {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .type-main .person-type {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-highlight-color);
+  }
+  
+  .preferance-container .preferance {
+    margin-bottom: 50px;
+  }
+  
+  .preferance-container .preferance .abst {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-highlight-color);
+  }
+  
+  .preferance .flavor {
+    margin-bottom: 5px;
+  }
+  
+  .preferance .flavor .highlight {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  
+  /* myPage: likes */
+  /* .likes-container .like-wooju {
+    margin: 0 5% 25px 5%;
+    width: 90%;
+    height: 120px;
+    border-radius: 20px;
+    box-shadow: 1px 4px 4px 4px rgba(0, 0, 0, 0.05);
+    background-color: var(--card-bg-color);
+    position: relative;
+  } */
+  
+  /* .likes-container .like-wooju:last-child {
+    margin-bottom: 100px;
+  }
+   */
+  /* .likes-container .like-wooju > div {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .like-wooju .wooju-img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .like-wooju .wooju-img img {
+    margin: 0 auto;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .like-wooju .introduction {
+    margin: 10px 0;
+    width: calc(100% - 120px);
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    font-size: 0.9rem;
+  }
+  
+  .like-wooju .introduction > div {
+    height: 33px;
+    line-height: 33px;
+  }
+  
+  .like-wooju .introduction .title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .like-wooju .introduction .star-icon {
+    color: #FFD634;
+  }
+  
+  .like-wooju .introduction .half {
+    margin-right: 5px;
+  }
+  
+  .like-wooju .introduction .heart {
+    margin: 0 3px 0 5px;
+  }
+  
+  .like-wooju .introduction .heart .heart-icon {
+    color: tomato;
+  }
+   */
+  
+  /* myPage: reviews */
+  .mypage-review-container .list-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  @media (min-width: 500px) {
+    .mypage-review-card {
+      margin: 0 15px 50px 15px;
+      width: 220px;
+      height: 350px;
+    }
+    
+    .mypage-review-card .review-content {
+      margin: 10px 0 0 10px;
+    }  
+    
+    .mypage-review-card .review-img {
+      width: 220px;
+      height: 220px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .mypage-review-card {
+      margin: 0 3vw 10vw 3vw;
+      width: 44vw;
+      height: 70vw;
+    }
+    
+    .mypage-review-card .review-content {
+      margin: 2vw 0 0 10px;
+    }
+  
+    .mypage-review-card .review-img {
+      width: 44vw;
+      height: 44vw;
+    }
+  }
+  
+  .mypage-review-card {
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, var(--shadow-percentage-04));
+    overflow: hidden;
+  }
+  
+  .mypage-review-card .review-img {
+    display: inline-block;
+  }
+  
+  
+  .mypage-review-card .review-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .mypage-review-card .review-content .review-wooju {
+    font-weight: 600;
+  }
+  
+  .mypage-review-card .review-content .review-date,
+  .mypage-review-card .review-content .review-rate {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .mypage-review-card .review-content .review-rate .star {
+    color: #FFD634;
+  }
+  
